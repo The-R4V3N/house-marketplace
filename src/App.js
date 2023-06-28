@@ -13,7 +13,7 @@ import ForgotPassword from './pages/ForgotPassword'
 import CreateListing from './pages/CreateListing'
 // import EditListing from './pages/EditListing'
 import Listing from './pages/Listing'
-// import Contact from './pages/Contact'
+import Contact from './pages/Contact'
 
 function App() {
 	return (
@@ -35,7 +35,7 @@ function App() {
 			  path='/category/:categoryName/:listingId'
 			  element={<Listing />}
 			/>
-			{/* <Route path='/contact/:landlordId' element={<Contact />} /> */}
+			<Route path='/contact/:landlordId' element={<Contact />} />
 		  </Routes>
 		  <Navbar />
 		</Router>
