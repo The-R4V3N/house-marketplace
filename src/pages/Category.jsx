@@ -123,10 +123,10 @@ function Category() {
 
 					<br />
 					<br />
-					{lastFetchedListing && (
-						<p className='loadMore' onClick={onFetchMoreListings}>
-							Load More
-						</p>
+					{lastFetchedListing && listings.length >= 10 && (
+			  <p className='loadMore' onClick={onFetchMoreListings}>
+				Load More
+			  </p>
 					)}
 				</>
 			) : (
