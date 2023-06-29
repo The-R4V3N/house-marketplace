@@ -59,6 +59,7 @@ By offering these professional features, the House Marketplace app aims to provi
 - Clone this repository to your local machine.
 - Set up your development environment and ensure you have the necessary dependencies installed.
 - Install Node.js from the [official Website](https://nodejs.org) if you dont have it already
+- You will need a geocoding api key for this to work which you can obtain from google cloud
   
 ### In the project  directory run
 
