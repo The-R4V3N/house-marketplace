@@ -26,7 +26,7 @@
 
   ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-This repository contains a House Marketplace App made in React and Firebase
+This repository contains a House Marketplace App made in React and Firebase as Backend and its hosted on Vercel
   
 ## Table of Contents
 
@@ -38,15 +38,27 @@ This repository contains a House Marketplace App made in React and Firebase
 
 ## Features
 
-Will update this
+The House Marketplace app offers a range of professional features for users, including:
+
+- User Registration: Users can create an account to efficiently list their properties for sale or rent on the platform.
+
+- Listing Management: Account holders have the ability to edit or delete their property listings, allowing for seamless   updates and adjustments as needed.
+
+- Contact Functionality: Even non-registered users can easily contact the property owner or agent directly through the app, streamlining communication between interested parties.
+
+- Mobile and Desktop Compatibility: The app is designed with a mobile-first approach, ensuring optimal usability on smartphones and tablets. However, it also provides a responsive and user-friendly experience when accessed from desktop computers.
+
+- Location Mapping: The app incorporates a mapping feature that visually displays the location of each property, providing potential buyers or renters with valuable geographical context.
+
+- Interactive Slider: Both the explore page and listing page are equipped with an interactive slider, enhancing the user experience by allowing them to easily navigate through property images or other relevant visual content.
+
+By offering these professional features, the House Marketplace app aims to provide a comprehensive and user-friendly platform for buying, selling, or renting properties.
 
 ## Getting Started
 
-  - Clone this repository to your local machine.
-  - Set up your development environment and ensure you have the necessary dependencies installed.
-  - You can install the necessary dependencies with:
-
-  - Install Node.js from the [official Website](https://nodejs.org) if you dont have it already
+- Clone this repository to your local machine.
+- Set up your development environment and ensure you have the necessary dependencies installed.
+- Install Node.js from the [official Website](https://nodejs.org) if you dont have it already
   
 ### In the project  directory run
 
