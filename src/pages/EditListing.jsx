@@ -186,32 +186,38 @@ function EditListing() {
 			})
 		}
 
-		const imgUrls = await Promise.all(
-			[...images].map((image) => storeImage(image))
-		).catch(() => {
+		try {
+			const imgUrls = await Promise.all(
+				[...images].map((image) => storeImage(image))
+			).catch(() => {
+				setLoading(false)
+				toast.error('Images not uploaded')
+				return
+			})
+
+			const formDataCopy = {
+				...formData,
+				imgUrls,
+				geolocation,
+				timestamp: serverTimestamp(),
+			}
+
+			formDataCopy.location = address
+			delete formDataCopy.images
+			delete formDataCopy.address
+			!formDataCopy.offer && delete formDataCopy.discountedPrice
+
+			// Update listing
+			const docRef = doc(db, 'listings', params.listingId)
+			await updateDoc(docRef, formDataCopy)
 			setLoading(false)
-			toast.error('Images not uploaded')
-			return
-		})
-
-		const formDataCopy = {
-			...formData,
-			imgUrls,
-			geolocation,
-			timestamp: serverTimestamp(),
+			toast.success('Listing saved')
+			navigate(`/category/${formDataCopy.type}/${docRef.id}`)
+		} catch (error) {
+			setLoading(false)
+			toast.error('Listing could not be updated')
+			console.error(error)
 		}
-
-		formDataCopy.location = address
-		delete formDataCopy.images
-		delete formDataCopy.address
-		!formDataCopy.offer && delete formDataCopy.discountedPrice
-
-		// Update listing
-		const docRef = doc(db, 'listings', params.listingId)
-		await updateDoc(docRef, formDataCopy)
-		setLoading(false)
-		toast.success('Listing saved')
-		navigate(`/category/${formDataCopy.type}/${docRef.id}`)
 	}
 
 	const onMutate = (e) => {
