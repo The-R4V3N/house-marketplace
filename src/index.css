@@ -76,13 +76,13 @@ button {
 	cursor: pointer;
 	position: absolute;
 	top: -3%;
-	right: -2%;
+	right: -2.9%;
 }
 .editIcon {
 	cursor: pointer;
 	position: absolute;
-	top: -3.4%;
-	right: 20px;
+	top: -2.4%;
+	right: 10px;
 }
 
 .pageContainer,
@@ -805,6 +805,11 @@ button {
 .createListingButton {
 	margin-top: 5rem;
 }
+
+.cancelListingButton {
+	margin-top: 3rem;
+}
+
 
 .offers {
 	margin-bottom: 10rem;

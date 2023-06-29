@@ -348,6 +348,7 @@ function CreateListing() {
 						required
 					/>
 
+					{/* //TODO You may want the user to be enter the geolocation, Then remove the ! in front of geolocationEnabled */}
 					{!geolocationEnabled && (
 						<div className='formLatLng flex'>
 							<div>
