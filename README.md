@@ -25,6 +25,7 @@
 ## house-marketplace-app
 
   ![License](https://img.shields.io/badge/license-MIT-blue.svg)
+  ![Lines of code](https://tokei.rs/b1/github/The-R4V3N/house-marketplace)
 
 This repository contains a House Marketplace App made in React and Firebase as Backend and its hosted on Vercel
   
